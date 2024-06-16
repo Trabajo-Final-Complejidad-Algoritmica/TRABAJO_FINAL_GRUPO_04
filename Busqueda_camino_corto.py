@@ -1,3 +1,7 @@
+# -----------------------------------------------------------------------------
+# ---------------------  Implementación de disjktra    ------------------------
+# -----------------------------------------------------------------------------
+
 import tkinter as tk
 from tkinter.ttk import Combobox, Button, Label
 import networkx as nx
@@ -54,7 +58,7 @@ areas = {
 
 graph = {
     "AREA": {
-        "1": {"4": 6, "2": 4, "13": 2, "3": 3, "11": 2},
+        "1": {"4": 6, "2": 4, "13": 2, "3": 3, "11": 2},  ## Distancias aproximados.
         "2": {"1": 4, "11": 4, "6": 2, "20": 3, "7": 1, "3": 2},
         "3": {"14": 3, "20": 4, "7": 1, "2": 2, "1": 3, "13": 5, "12": 5},
         "4": {"1": 6, "13": 4, "11": 3},
@@ -106,7 +110,7 @@ def Buscar_Ruta_Corta():
 
         ruta_nombres = [G.nodes[num]['label'] for num in ruta_corta]
         ruta_str = "\n -> ".join(ruta_nombres)
-        resultado.config(text=f"RUTA RECOMENDADA Y SEGURA:\n\n -> {ruta_str}\n\nDistancia: {calcular_distancia} Kilómetros")
+        resultado.config(text=f"RUTA RECOMENDADA Y SEGURA:\n\n -> {ruta_str}\n\nDistancia: {calcular_distancia} Kilómetros Apróx.")
 
         edges = list(zip(ruta_corta, ruta_corta[1:]))
         ax.clear()
@@ -123,7 +127,7 @@ def Buscar_Ruta_Corta():
 # Crear la ventana principal
 ventana = tk.Tk()
 ventana.geometry("800x650")
-ventana.title("Complejidad Algorítmica - UPC")
+ventana.title("Trabajo Final - Universidad Peruana de Ciencias Aplicadas")
 ventana.iconbitmap("U.ico")
 
 # -----------------------------------------------------------------------------
@@ -142,7 +146,7 @@ area2.place(x=120, y=50, width=120, height=30)
 # -----------------------------------------------------------------------------
 # ------------------  Botón para calcular la ruta más corta  ------------------
 # -----------------------------------------------------------------------------
-btn = Button(ventana, text="Buscar ruta", command=Buscar_Ruta_Corta)
+btn = Button(ventana, text="Buscar ruta", command=Buscar_Ruta_Corta, )
 btn.place(x=130, y=90, width=100, height=30)
 
 # -----------------------------------------------------------------------------
