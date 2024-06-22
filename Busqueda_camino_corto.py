@@ -31,7 +31,7 @@ for num_area, neighbors in grafo["AREA"].items():
 
 
 def Buscar_Ruta_Corta():
-    area_origen = area1.get()
+    area_origen = area1.get()  #Obtener datos
     area_destino = area2.get()
 
     if area_origen == area_destino:
