@@ -1,0 +1,23 @@
+{
+    "Central":      "1",
+    "Rampart":      "2",
+    "Southwest":    "3",
+    "Hollenbeck":   "4",
+    "Harbor":       "5",
+    "Hollywood":    "6",
+    "Wilshire":     "7",
+    "West LA":      "8",
+    "Van Nuys":     "9",
+    "West Valley":  "10",
+    "Northeast":    "11",
+    "77th Street":  "12",
+    "Newton":       "13",
+    "Pacific":      "14",
+    "N Hollywood":  "15",
+    "Foothill":     "16",
+    "Devonshire":   "17",
+    "Southeast":    "18",
+    "Mission":      "19",
+    "Olympic":      "20",
+    "Topanga":      "21"
+}

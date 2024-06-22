@@ -1,0 +1,23 @@
+{
+    "Central":      107,
+    "Rampart":      68,
+    "Southwest":    88,
+    "Hollenbeck":   70,
+    "Harbor":       66,
+    "Hollywood":    70,
+    "Wilshire":     94,
+    "West LA":      100,
+    "Van Nuys":     73,
+    "West Valley":  85,
+    "Northeast":    89,
+    "77th Street":  93,
+    "Newton":       92,
+    "Pacific":      83,
+    "N Hollywood":  106,
+    "Foothill":     54,
+    "Devonshire":   94,
+    "Southeast":    77,
+    "Mission":      68,
+    "Olympic":      72,
+    "Topanga":      68
+}
