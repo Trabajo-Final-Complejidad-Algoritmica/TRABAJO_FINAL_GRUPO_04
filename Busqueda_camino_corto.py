@@ -8,7 +8,10 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import json
-
+from tkinter import messagebox
+# -----------------------------------------------------------------------------
+# ------------  Importamos los datos desde un DB almacenada    ----------------
+# -----------------------------------------------------------------------------
 
 with open('JSON/cant_crimenes.txt', 'r') as file:
     cant_crimines = json.load(file)
@@ -19,7 +22,12 @@ with open('JSON/areas.txt', 'r') as file:
 with open('JSON/grafo.txt', 'r') as file:
     grafo = json.load(file)
 
-G = nx.Graph() # Grafo vacío según la librería Networ
+# -----------------------------------------------------------------------------
+# -----------------------------  Grafo vació    -------------------------------
+# -----------------------------------------------------------------------------
+
+G = nx.Graph()
+
 
 for area, num_area in areas.items():  # agregar nodos
     G.add_node(num_area, label=area)
@@ -30,6 +38,9 @@ for num_area, neighbors in grafo["AREA"].items():
         G.add_edge(num_area, neighbor, weight=weight)
 
 
+# -----------------------------------------------------------------------------
+# ---------------------  Función implementada con disktra    ------------------
+# -----------------------------------------------------------------------------
 def Buscar_Ruta_Corta():
     area_origen = area1.get()  #Obtener datos
     area_destino = area2.get()
@@ -49,25 +60,39 @@ def Buscar_Ruta_Corta():
         ruta_str = "\n -> ".join(ruta_nombres)
         resultado.config(
 
-            text=f"RUTA RECOMENDADA Y SEGURA:\n\n -> {ruta_str}\n\nDistancia: {calcular_distancia} Kilómetros Apróx.")
+            text=f"RUTA RECOMENDADA Y SEGURA:\n\n "
+                 f"-> {ruta_str}\n\n"
+                 f"Distancia: {calcular_distancia} Kilómetros Apróx.")
 
         edges = list(zip(ruta_corta, ruta_corta[1:]))
         ax.clear()
         pos = nx.spring_layout(G)
         labels = {num: G.nodes[num]['label'] for num in G.nodes}
 
-        node_colors = ['#DC4E30' if cant_crimines[G.nodes[node]['label']] > 100 else '#6AA1DF' for node in G.nodes]
+        node_colors = ['#DC4E30' if cant_crimines[G.nodes[node]['label']] > 100
+                       else '#6AA1DF' for node in G.nodes]
 
-        nx.draw(G, pos, with_labels=True, labels=labels, node_color=node_colors, node_size=800, edge_color='gray',
-                ax=ax)
+        nx.draw(G, pos, with_labels=True, labels=labels,
+                node_color=node_colors, node_size=800,
+                edge_color='gray', ax=ax)
+
         nx.draw_networkx_edges(G, pos, edgelist=edges, edge_color='green', width=2.0, ax=ax)
 
         canvas.draw()
 
+        for num in ruta_corta:
+        #        resultado.config(text="Alerta: El camino pasa por áreas con alto riesgo de crimen.")
+            if cant_crimines[G.nodes[num]['label']] > 100:
+                messagebox.showwarning("Alerta", "El camino pasa por áreas con alto riesgo de crimen.")
+                break
+#
     except KeyError:
         resultado.config(text="Error!!")
 
-# Crear la ventana principal
+
+# -----------------------------------------------------------------------------
+# -------------------------  Crear la ventana principal  ----------------------
+# -----------------------------------------------------------------------------
 ventana = tk.Tk()
 ventana.geometry("800x650")
 ventana.title("Trabajo Final - Universidad Peruana de Ciencias Aplicadas")
@@ -109,7 +134,8 @@ ax = fig.add_subplot(111)
 # -----------------------------------------------------------------------------
 pos = nx.spring_layout(G)
 labels = {num: G.nodes[num]['label'] for num in G.nodes}
-nx.draw(G, pos, with_labels=True, labels=labels, node_color='lightblue', node_size=800, edge_color='gray', ax=ax)
+nx.draw(G, pos, with_labels=True, labels=labels, node_color='lightblue',
+        node_size=800, edge_color='gray', ax=ax)
 
 # -----------------------------------------------------------------------------
 # ---------------------------  Posición del gráfico  --------------------------
@@ -123,3 +149,7 @@ canvas.get_tk_widget().place(x=300, y=10)
 # -----------------------------------------------------------------------------
 
 ventana.mainloop()
+
+# -----------------------------------------------------------------------------
+# -----------------------------  Fin del código  ------------------------------
+# -----------------------------------------------------------------------------
