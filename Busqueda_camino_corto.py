@@ -50,22 +50,21 @@ def Buscar_Ruta_Corta():
         return
 
     try:
-        num_origen = areas[area_origen]
-        num_destino = areas[area_destino]
+        id_origin = areas[area_origen]
+        id_destino = areas[area_destino]
 
-        ruta_corta = nx.dijkstra_path(G, num_origen, num_destino, weight='weight')
-        calcular_distancia = nx.dijkstra_path_length(G, num_origen, num_destino, weight='weight')
+        ruta_corta = nx.dijkstra_path(G, id_origin, id_destino, weight='weight')
+        calcular_distancia = nx.dijkstra_path_length(G, id_origin, id_destino, weight='weight')
 
-        ruta_nombres = [G.nodes[num]['label'] for num in ruta_corta]
-        ruta_str = "\n -> ".join(ruta_nombres)
+        Area_Visitada = [G.nodes[num]['label'] for num in ruta_corta]
+        areas_seguras = "\n -> ".join(Area_Visitada)
         resultado.config(
-
             text=f"RUTA RECOMENDADA Y SEGURA:\n\n "
-                 f"-> {ruta_str}\n\n"
+                 f"-> {areas_seguras}\n\n"
                  f"Distancia: {calcular_distancia} Kilómetros Apróx.")
 
         edges = list(zip(ruta_corta, ruta_corta[1:]))
-        ax.clear()
+        ax.clear()  # Limpiar al pantalla
         pos = nx.spring_layout(G)
         labels = {num: G.nodes[num]['label'] for num in G.nodes}
 
@@ -73,7 +72,7 @@ def Buscar_Ruta_Corta():
                        else '#6AA1DF' for node in G.nodes]
 
         nx.draw(G, pos, with_labels=True, labels=labels,
-                node_color=node_colors, node_size=800,
+                node_color=node_colors, node_size=600,
                 edge_color='gray', ax=ax)
 
         nx.draw_networkx_edges(G, pos, edgelist=edges, edge_color='green', width=2.0, ax=ax)
