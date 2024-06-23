@@ -59,6 +59,7 @@ def Buscar_Ruta_Corta():
         Area_Visitada = [G.nodes[num]['label'] for num in ruta_corta]
         areas_seguras = "\n -> ".join(Area_Visitada)
         resultado.config(
+
             text=f"RUTA RECOMENDADA Y SEGURA:\n\n "
                  f"-> {areas_seguras}\n\n"
                  f"Distancia: {calcular_distancia} Kilómetros Apróx.")
@@ -82,9 +83,9 @@ def Buscar_Ruta_Corta():
         for num in ruta_corta:
         #        resultado.config(text="Alerta: El camino pasa por áreas con alto riesgo de crimen.")
             if cant_crimines[G.nodes[num]['label']] > 100:
-                messagebox.showwarning("Alerta", "El camino pasa por áreas con alto riesgo de crimen.")
+                messagebox.showwarning("Alerta", "Zonas con alto riesgo de crimen!!")
                 break
-#
+
     except KeyError:
         resultado.config(text="Error!!")
 
@@ -97,10 +98,12 @@ ventana.geometry("800x650")
 ventana.title("Trabajo Final - Universidad Peruana de Ciencias Aplicadas")
 ventana.iconbitmap("JSON/U.ico")
 
+
 # -----------------------------------------------------------------------------
 # -----------------------  Listas desplegables en label  ----------------------
 # -----------------------------------------------------------------------------
 label1 = tk.Label(ventana, text="Área de origen:")
+
 label1.place(x=10, y=10, width=100, height=30)
 area1 = Combobox(ventana, values=list(areas.keys()))
 area1.place(x=120, y=10, width=120, height=30)

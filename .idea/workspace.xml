@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11289484-9a87-4f04-be28-91c6d87263eb" name="Changes" comment="feat: Aggregate Alert!">
+    <list default="true" id="11289484-9a87-4f04-be28-91c6d87263eb" name="Changes" comment="feat: Update text cody">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Busqueda_camino_corto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busqueda_camino_corto.py" afterDir="false" />
     </list>
@@ -44,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Busqueda_camino_corto.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.ruta_corta_segura.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Python/Trabajo_Final_GRUPO_04/JSON",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Busqueda_camino_corto.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ruta_corta_segura.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python/Trabajo_Final_GRUPO_04/JSON&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python\Trabajo_Final_GRUPO_04\JSON" />
@@ -166,7 +166,8 @@
       <workItem from="1718573428857" duration="6348000" />
       <workItem from="1718632824423" duration="323000" />
       <workItem from="1718854872614" duration="18000" />
-      <workItem from="1719084041653" duration="8940000" />
+      <workItem from="1719084041653" duration="9852000" />
+      <workItem from="1719098241016" duration="5210000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Aggregate file cody">
       <option name="closed" value="true" />
@@ -216,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719092417727</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: Update text cody">
+      <option name="closed" value="true" />
+      <created>1719093339477</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719093339477</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,11 +238,12 @@
     <MESSAGE value="feat: Update text" />
     <MESSAGE value="feat: Update text in README.md" />
     <MESSAGE value="feat: Aggregate Alert!" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Aggregate Alert!" />
+    <MESSAGE value="feat: Update text cody" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Update text cody" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$ruta_corta_segura.coverage" NAME="ruta_corta_segura Coverage Results" MODIFIED="1719089376860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719093049329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719124025943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$main.coverage" NAME="main Coverage Results" MODIFIED="1719089386274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
