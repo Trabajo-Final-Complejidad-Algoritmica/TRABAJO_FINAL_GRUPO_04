@@ -107,26 +107,26 @@ ventana.iconbitmap("JSON/U.ico")
 
 label1 = tk.Label(ventana, text="Área de origen:")
 
-label1.place(x=10, y=20, width=100, height=30)
+label1.place(x=10, y=40, width=100, height=30)
 area1 = Combobox(ventana, values=list(areas.keys()))
-area1.place(x=120, y=20, width=120, height=30)
+area1.place(x=120, y=40, width=120, height=30)
 
 label2 = tk.Label(ventana, text="Área de destino:")
-label2.place(x=10, y=60, width=100, height=30)
+label2.place(x=10, y=80, width=100, height=30)
 area2 = Combobox(ventana, values=list(areas.keys()))
-area2.place(x=120, y=60, width=120, height=30)
+area2.place(x=120, y=80, width=120, height=30)
 
 # -----------------------------------------------------------------------------
 # ------------------  Botón para calcular la ruta más corta  ------------------
 # -----------------------------------------------------------------------------
 btn = Button(ventana, text="Buscar ruta", command=Buscar_Ruta_Corta, bg="yellow", fg="black")
-btn.place(x=110, y=110, width=100, height=30)
+btn.place(x=110, y=130, width=100, height=30)
 
 # -----------------------------------------------------------------------------
 # --------------  Label para mostrar los resultados del camino  ---------------
 # -----------------------------------------------------------------------------
 resultado = Label(ventana, text="", wraplength=780, justify="left")
-resultado.place(x=20, y=190, width=255, height=400)
+resultado.place(x=20, y=210, width=255, height=400)
 
 # -----------------------------------------------------------------------------
 # ---------------------  Figura para mostrar el grafo  ------------------------

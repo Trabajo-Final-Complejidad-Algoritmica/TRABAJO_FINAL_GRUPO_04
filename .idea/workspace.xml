@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11289484-9a87-4f04-be28-91c6d87263eb" name="Changes" comment="feat: Update text cody">
+    <list default="true" id="11289484-9a87-4f04-be28-91c6d87263eb" name="Changes" comment="feat: Update coding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Busqueda_camino_corto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busqueda_camino_corto.py" afterDir="false" />
     </list>
@@ -168,7 +168,8 @@
       <workItem from="1718854872614" duration="18000" />
       <workItem from="1719084041653" duration="9852000" />
       <workItem from="1719098241016" duration="5476000" />
-      <workItem from="1719151890332" duration="2916000" />
+      <workItem from="1719151890332" duration="5385000" />
+      <workItem from="1719164131222" duration="2301000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Aggregate file cody">
       <option name="closed" value="true" />
@@ -234,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719124281437</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: Update coding">
+      <option name="closed" value="true" />
+      <created>1719154856159</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719154856159</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,11 +257,12 @@
     <MESSAGE value="feat: Update text in README.md" />
     <MESSAGE value="feat: Aggregate Alert!" />
     <MESSAGE value="feat: Update text cody" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Update text cody" />
+    <MESSAGE value="feat: Update coding" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Update coding" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$ruta_corta_segura.coverage" NAME="ruta_corta_segura Coverage Results" MODIFIED="1719089376860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719154650586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719166493225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$main.coverage" NAME="main Coverage Results" MODIFIED="1719089386274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
