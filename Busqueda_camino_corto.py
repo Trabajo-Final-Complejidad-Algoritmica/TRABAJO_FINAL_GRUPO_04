@@ -8,6 +8,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import json
+from tkinter import Tk, Button
 from tkinter import messagebox
 # -----------------------------------------------------------------------------
 # ------------  Importamos los datos desde un DB almacenada    ----------------
@@ -46,7 +47,7 @@ def Buscar_Ruta_Corta():
     area_destino = area2.get()
 
     if area_origen == area_destino:
-        resultado.config(text="\tAreas iguales!")
+        messagebox.showwarning("Alerta", "Areas Iguales")
         return
 
     try:
@@ -95,6 +96,7 @@ def Buscar_Ruta_Corta():
 # -----------------------------------------------------------------------------
 ventana = tk.Tk()
 ventana.geometry("800x650")
+ventana.configure(bg="#3A2C6C")
 ventana.title("Trabajo Final - Universidad Peruana de Ciencias Aplicadas")
 ventana.iconbitmap("JSON/U.ico")
 
@@ -102,28 +104,29 @@ ventana.iconbitmap("JSON/U.ico")
 # -----------------------------------------------------------------------------
 # -----------------------  Listas desplegables en label  ----------------------
 # -----------------------------------------------------------------------------
+
 label1 = tk.Label(ventana, text="Área de origen:")
 
-label1.place(x=10, y=10, width=100, height=30)
+label1.place(x=10, y=20, width=100, height=30)
 area1 = Combobox(ventana, values=list(areas.keys()))
-area1.place(x=120, y=10, width=120, height=30)
+area1.place(x=120, y=20, width=120, height=30)
 
 label2 = tk.Label(ventana, text="Área de destino:")
-label2.place(x=10, y=50, width=100, height=30)
+label2.place(x=10, y=60, width=100, height=30)
 area2 = Combobox(ventana, values=list(areas.keys()))
-area2.place(x=120, y=50, width=120, height=30)
+area2.place(x=120, y=60, width=120, height=30)
 
 # -----------------------------------------------------------------------------
 # ------------------  Botón para calcular la ruta más corta  ------------------
 # -----------------------------------------------------------------------------
-btn = Button(ventana, text="Buscar ruta", command=Buscar_Ruta_Corta, )
-btn.place(x=130, y=90, width=100, height=30)
+btn = Button(ventana, text="Buscar ruta", command=Buscar_Ruta_Corta, bg="yellow", fg="black")
+btn.place(x=110, y=110, width=100, height=30)
 
 # -----------------------------------------------------------------------------
 # --------------  Label para mostrar los resultados del camino  ---------------
 # -----------------------------------------------------------------------------
 resultado = Label(ventana, text="", wraplength=780, justify="left")
-resultado.place(x=10, y=130, width=780, height=500)
+resultado.place(x=20, y=190, width=255, height=400)
 
 # -----------------------------------------------------------------------------
 # ---------------------  Figura para mostrar el grafo  ------------------------
@@ -144,7 +147,7 @@ nx.draw(G, pos, with_labels=True, labels=labels, node_color='lightblue',
 # -----------------------------------------------------------------------------
 canvas = FigureCanvasTkAgg(fig, master=ventana)
 canvas.draw()
-canvas.get_tk_widget().place(x=300, y=10)
+canvas.get_tk_widget().place(x=300, y=0, width=1150)
 
 # -----------------------------------------------------------------------------
 # ---------------------------  Ventana Principal  -----------------------------
