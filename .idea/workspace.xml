@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11289484-9a87-4f04-be28-91c6d87263eb" name="Changes" comment="feat: Update coding MY JSON SERVER">
-      <change beforePath="$PROJECT_DIR$/Busqueda_camino_corto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busqueda_camino_corto.py" afterDir="false" />
-    </list>
+    <list default="true" id="11289484-9a87-4f04-be28-91c6d87263eb" name="Changes" comment="feat: Update style" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,7 +220,7 @@
       <workItem from="1719151890332" duration="5385000" />
       <workItem from="1719164131222" duration="2922000" />
       <workItem from="1719167543582" duration="733000" />
-      <workItem from="1719554505951" duration="4396000" />
+      <workItem from="1719554505951" duration="4738000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Aggregate file cody">
       <option name="closed" value="true" />
@@ -312,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719559631963</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: Update style">
+      <option name="closed" value="true" />
+      <created>1719560099059</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719560099059</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,11 +334,12 @@
     <MESSAGE value="feat: Update text cody" />
     <MESSAGE value="feat: Update coding" />
     <MESSAGE value="feat: Update coding MY JSON SERVER" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Update coding MY JSON SERVER" />
+    <MESSAGE value="feat: Update style" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Update style" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$ruta_corta_segura.coverage" NAME="ruta_corta_segura Coverage Results" MODIFIED="1719089376860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719559533667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719560108541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$pandas.coverage" NAME="pandas Coverage Results" MODIFIED="1719168006866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSON" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$pandas__1_.coverage" NAME="pandas (1) Coverage Results" MODIFIED="1719168046424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$main.coverage" NAME="main Coverage Results" MODIFIED="1719089386274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

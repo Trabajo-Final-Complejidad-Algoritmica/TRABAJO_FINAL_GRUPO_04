@@ -38,7 +38,7 @@ def update_graph(month):
         ax.clear()
         pos = nx.spring_layout(G)
         labels = {num: G.nodes[num]['label'] for num in G.nodes}
-        node_colors = ['#DC4E30' if G.nodes[node]['crime'] > 100 else '#6AA1DF' for node in G.nodes]
+        node_colors = ['#DC4E30' if G.nodes[node]['crime'] >= 100 else '#6AA1DF' for node in G.nodes]
         nx.draw(G, pos, with_labels=True, labels=labels, node_color=node_colors, node_size=600, edge_color='gray',
                 ax=ax)
         canvas.draw()
