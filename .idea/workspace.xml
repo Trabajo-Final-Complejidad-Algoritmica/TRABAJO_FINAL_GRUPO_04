@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11289484-9a87-4f04-be28-91c6d87263eb" name="Changes" comment="feat: Update coding">
-      <change afterPath="$PROJECT_DIR$/JSON/pandas_analisis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Trabajo_Final_GRUPO_04.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Trabajo_Final_GRUPO_04.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busqueda_camino_corto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busqueda_camino_corto.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +31,12 @@
     &quot;assignee&quot;: &quot;VelardeSoft&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/VelardeSoft/TRABAJO_FINAL_GRUPO_04.git&quot;,
-    &quot;accountId&quot;: &quot;3e6de155-33bb-4d6c-bb17-65fa83c39385&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Trabajo-Final-Complejidad-Algoritmica/TRABAJO_FINAL_GRUPO_04.git",
+    "accountId": "3e6de155-33bb-4d6c-bb17-65fa83c39385"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -44,26 +46,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Busqueda_camino_corto.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.pandas (1).executor": "Run",
-    "Python.pandas.executor": "Run",
-    "Python.pandas_analisis.executor": "Run",
-    "Python.ruta_corta_segura.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Python/Trabajo_Final_GRUPO_04/JSON",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Busqueda_camino_corto.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pandas (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.pandas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pandas_analisis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ruta_corta_segura.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python/Trabajo_Final_GRUPO_04/JSON&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python\Trabajo_Final_GRUPO_04\JSON" />
@@ -73,7 +75,7 @@
       <recent name="D:\Python\Trabajo_Final_GRUPO_04" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Busqueda_camino_corto">
     <configuration name="Busqueda_camino_corto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Trabajo_Final_GRUPO_04" />
       <option name="ENV_FILES" value="" />
@@ -191,9 +193,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pandas_analisis" />
-        <item itemvalue="Python.pandas_analisis" />
         <item itemvalue="Python.Busqueda_camino_corto" />
+        <item itemvalue="Python.pandas_analisis" />
+        <item itemvalue="Python.pandas_analisis" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.ruta_corta_segura" />
       </list>
@@ -223,6 +225,7 @@
       <workItem from="1719151890332" duration="5385000" />
       <workItem from="1719164131222" duration="2922000" />
       <workItem from="1719167543582" duration="733000" />
+      <workItem from="1719554505951" duration="3918000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Aggregate file cody">
       <option name="closed" value="true" />
@@ -323,7 +326,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$ruta_corta_segura.coverage" NAME="ruta_corta_segura Coverage Results" MODIFIED="1719089376860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719166493225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$Busqueda_camino_corto.coverage" NAME="Busqueda_camino_corto Coverage Results" MODIFIED="1719559507023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$pandas.coverage" NAME="pandas Coverage Results" MODIFIED="1719168006866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSON" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$pandas__1_.coverage" NAME="pandas (1) Coverage Results" MODIFIED="1719168046424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TRABAJO_FINAL_GRUPO_04$main.coverage" NAME="main Coverage Results" MODIFIED="1719089386274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
