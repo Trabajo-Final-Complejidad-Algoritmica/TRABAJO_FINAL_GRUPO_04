@@ -5,15 +5,10 @@ import json
 from tkinter import Tk, Button, Label, StringVar, messagebox
 from tkinter.ttk import Combobox
 import requests
-
-# El resto del código sigue igual...
-
-
 # -----------------------------------------------------------------------------
 # ------------  Importamos los datos desde el JSON Server    ------------------
 # -----------------------------------------------------------------------------
 
-# Función para obtener los datos de crímenes por mes
 def get_crime_data(month):
     url = "https://my-json-server.typicode.com/velardesoft/DataBase_CrimenData_LosAngeles_Universidad_Peruana_De_Ciencias_Aplicadas_2024_1/db"
     response = requests.get(url)
@@ -25,8 +20,9 @@ def get_crime_data(month):
 
     return None
 
-
-# Función para actualizar el gráfico y la información
+# -----------------------------------------------------------------------------
+# ----------------  Función para actualizar el gráfico    ---------------------
+# -----------------------------------------------------------------------------
 def update_graph(month):
     crime_data = get_crime_data(month)
     if crime_data:
@@ -47,7 +43,7 @@ def update_graph(month):
                 ax=ax)
         canvas.draw()
     else:
-        messagebox.showwarning("Alerta", f"No se encontraron datos de crímenes para el mes seleccionado.")
+        messagebox.showwarning("Alerta", f"No disponible.")
 
 
 # -----------------------------------------------------------------------------
@@ -95,24 +91,28 @@ def Buscar_Ruta_Corta():
                  f"-> {areas_seguras}\n\n"
                  f"Distancia: {calcular_distancia} Kilómetros Apróx.")
 
-        # Limpiar el gráfico
-        ax.clear()
+        ax.clear() # Limpiar el gráfico
 
-        # Generar un diccionario de colores para los nodos
+        # -----------------------------------------------------------------------------
+        # -------------------------------  Node colours, Xd    ------------------------
+        # -----------------------------------------------------------------------------
         node_colors = {node: '#DC4E30' if G.nodes[node]['crime'] >= 100 else '#6AA1DF' for node in G.nodes}
 
-        # Dibujar el grafo completo con los colores de los nodos
+
         pos = nx.spring_layout(G)
         labels = {num: G.nodes[num]['label'] for num in G.nodes}
         nx.draw(G, pos, with_labels=True, labels=labels, node_color=[node_colors[node] for node in G.nodes], node_size=600, edge_color='gray', ax=ax)
 
-        # Dibujar las aristas de la ruta seleccionada
+        # -----------------------------------------------------------------------------
+        # ------------------ Dibujar las aristas de la ruta seleccionada   ------------
+        # -----------------------------------------------------------------------------
         edges = list(zip(ruta_corta, ruta_corta[1:]))
         nx.draw_networkx_edges(G, pos, edgelist=edges, edge_color='green', width=2.0, ax=ax)
 
         canvas.draw()
-
-        # Verificar si la ruta pasa por áreas de alto riesgo
+        # -----------------------------------------------------------------------------
+        # --------------------------  Si la ruta es segura   --------------------------
+        # -----------------------------------------------------------------------------
         for num in ruta_corta:
             if G.nodes[num]['crime'] > 100:
                 messagebox.showwarning("Alerta", "Zonas con alto riesgo de crimen!!")
@@ -190,9 +190,13 @@ canvas.get_tk_widget().place(x=300, y=0, width=1150)
 # -----------------------------------------------------------------------------
 # ------------------------  Grafo inicial al ejecutar  ------------------------
 # -----------------------------------------------------------------------------
-update_graph("Enero")  # Cargar los datos de Febrero por defecto
+update_graph("Enero")
 
 # -----------------------------------------------------------------------------
 # ---------------------------  Ventana Principal  -----------------------------
 # -----------------------------------------------------------------------------
 ventana.mainloop()
+
+# -----------------------------------------------------------------------------
+# ---------------------------  Ventana Principal  -----------------------------
+# -----------------------------------------------------------------------------
